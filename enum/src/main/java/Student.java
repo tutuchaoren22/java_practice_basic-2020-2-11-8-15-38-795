@@ -1,12 +1,8 @@
-public enum Student {
-    STUDENT_1("Linda", "Female"),
-    STUDENT_2("Bob", "Male"),
-    STUDENT_3("Solider", "Male"),
-    STUDENT_4("Cindy", "Female");
-    private final String name;
-    private final String gender;
+public class Student {
+    private String name;
+    private Gender gender;
 
-    Student(String name, String gender) {
+    Student(String name, Gender gender) {
         this.name = name;
         this.gender = gender;
     }
@@ -15,7 +11,7 @@ public enum Student {
         return name;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 }
